@@ -3,7 +3,10 @@ $(document).on('ready', function() {
   $('form').submit(function(event) {
     event.preventDefault();
 
-    var form = $(this).serializeArray();
+    // this.val(); javascript
+    // var form = $(this).val(); //jQuery
+    var form = $(this).serialize();
+    // var form = $(this).serializeArray();
 
     console.log(form);
 
